@@ -14,22 +14,40 @@
       line-height: 1.6;
     }
     header {
-      background: #000;
+      background: url('https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Downtown_Atlanta_%28Unsplash%29.jpg/1200px-Downtown_Atlanta_%28Unsplash%29.jpg') center/cover no-repeat;
       color: #fff;
-      padding: 2rem;
+      padding: 5rem 2rem;
       text-align: center;
     }
     header h1 {
       margin: 0;
-      font-size: 2rem;
+      font-size: 2.5rem;
+      background: rgba(0, 0, 0, 0.5);
+      display: inline-block;
+      padding: 1rem 2rem;
+      border-radius: 10px;
+    }
+    nav {
+      background-color: #333;
+      padding: 0.5rem;
+      text-align: center;
+    }
+    nav a {
+      color: white;
+      margin: 0 1rem;
+      text-decoration: none;
+      font-weight: 500;
+    }
+    nav a:hover {
+      text-decoration: underline;
     }
     main {
-      max-width: 800px;
+      max-width: 900px;
       margin: 2rem auto;
-      padding: 1rem;
+      padding: 0 1rem;
     }
     h2 {
-      font-size: 1.5rem;
+      font-size: 1.75rem;
       margin-top: 2rem;
       color: #000;
     }
@@ -44,6 +62,25 @@
       padding: 0.75rem 0;
       border-bottom: 1px solid #e0e0e0;
     }
+    .committee {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+      margin-top: 2rem;
+    }
+    .member {
+      flex: 1 1 250px;
+      text-align: center;
+    }
+    .member img {
+      border-radius: 50%;
+      width: 120px;
+      height: 120px;
+      object-fit: cover;
+    }
+    .member h3 {
+      margin: 0.5rem 0 0.2rem;
+    }
     footer {
       text-align: center;
       padding: 2rem;
@@ -56,25 +93,64 @@
   <header>
     <h1>One-Stop Solution for Drug Development</h1>
   </header>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#schedule">Schedule</a>
+    <a href="#committee">Committee</a>
+  </nav>
   <main>
-    <h2>About this workshop</h2>
-    <p>The utilization of large language models (LLMs) and prompting has witnessed a surge in popularity over the past few years, particularly in the field of natural language processing (NLP) and chatbots. A prime example of this is ChatGPT, a sophisticated conversational agent powered by LLMs, which has become increasingly prevalent in a range of industries, including healthcare.</p>
-    <p>The healthcare industry has experienced a significant shift towards digitization, resulting in vast amounts of medical data that can be challenging to manage and analyze. NLP has emerged as a critical tool in this regard, enabling the extraction of relevant information from medical records and related documents.</p>
-    <p>With the aid of LLMs and prompting, NLP has the potential to revolutionize healthcare by facilitating faster and more accurate analysis of medical data, leading to improved patient outcomes and more effective treatments. Applications include clinical decision support systems, where LLMs can assist healthcare providers in making informed decisions based on the patient’s history and symptoms.</p>
-    <p>Despite the benefits, concerns remain regarding data privacy, ethics, and bias due to the nature of training data. Addressing these concerns with appropriate safeguards is essential to fully leverage the potential of LLMs in healthcare.</p>
-    <p>This workshop will cover technologies and use cases of LLMs in biomedical and healthcare domains, and address the challenges associated with their implementation. Attendees will gain insights into cutting-edge developments and their impact on patient care.</p>
+    <section id="about">
+      <h2>About this workshop</h2>
+      <p>The utilization of large language models (LLMs) and prompting has witnessed a surge in popularity over the past few years, particularly in the field of natural language processing (NLP) and chatbots. A prime example of this is ChatGPT, a sophisticated conversational agent powered by LLMs, which has become increasingly prevalent in a range of industries, including healthcare.</p>
+      <p>The healthcare industry has experienced a significant shift towards digitization, resulting in vast amounts of medical data that can be challenging to manage and analyze. NLP has emerged as a critical tool in this regard, enabling the extraction of relevant information from medical records and related documents.</p>
+      <p>With the aid of LLMs and prompting, NLP has the potential to revolutionize healthcare by facilitating faster and more accurate analysis of medical data, leading to improved patient outcomes and more effective treatments.</p>
+      <p>This workshop will cover technologies and use cases of LLMs in biomedical and healthcare domains, and address the challenges associated with their implementation. Attendees will gain insights into cutting-edge developments and their impact on patient care.</p>
+    </section>
 
-    <h2>Schedule</h2>
-    <ul class="schedule">
-      <li><strong>Introduction</strong> (5 minutes)</li>
-      <li><strong>Large Language Models: Past, Current, and Future</strong> — Dr. Hongfang Liu (40 minutes)</li>
-      <li><strong>Opportunities and Challenges of Large Language Models in Healthcare</strong> — Dr. Yonghui Wu (40 minutes)</li>
-      <li><strong>ChatGPT in Action: An Experimental Investigation of Its Effectiveness in NLP Tasks</strong> — Dr. Xia Hu (40 minutes)</li>
-      <li><strong>Coffee Break</strong> (10 minutes)</li>
-      <li><strong>Prompting ChatGPT in Extracting Domain Knowledge to Facilitate Computational Drug Repurposing</strong> — Dr. Nansu Zong (40 minutes)</li>
-      <li><strong>LLM and Drug Synergy Prediction</strong> — Dr. Xiaoqian Jiang (40 minutes)</li>
-      <li><strong>Panel Discussion</strong> (40 minutes)</li>
-    </ul>
+    <section id="schedule">
+      <h2>Schedule</h2>
+      <ul class="schedule">
+        <li><strong>Introduction</strong> (5 minutes)</li>
+        <li><strong>Large Language Models: Past, Current, and Future</strong> — Dr. Hongfang Liu (40 minutes)</li>
+        <li><strong>Opportunities and Challenges of Large Language Models in Healthcare</strong> — Dr. Yonghui Wu (40 minutes)</li>
+        <li><strong>ChatGPT in Action: An Experimental Investigation of Its Effectiveness in NLP Tasks</strong> — Dr. Xia Hu (40 minutes)</li>
+        <li><strong>Coffee Break</strong> (10 minutes)</li>
+        <li><strong>Prompting ChatGPT in Extracting Domain Knowledge to Facilitate Computational Drug Repurposing</strong> — Dr. Nansu Zong (40 minutes)</li>
+        <li><strong>LLM and Drug Synergy Prediction</strong> — Dr. Xiaoqian Jiang (40 minutes)</li>
+        <li><strong>Panel Discussion</strong> (40 minutes)</li>
+      </ul>
+    </section>
+
+    <section id="committee">
+      <h2>Scientific Program Committee</h2>
+      <div class="committee">
+        <div class="member">
+          <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Dr. Liu">
+          <h3>Dr. Hongfang Liu</h3>
+          <p>Professor, Mayo Clinic</p>
+        </div>
+        <div class="member">
+          <img src="https://randomuser.me/api/portraits/men/65.jpg" alt="Dr. Wu">
+          <h3>Dr. Yonghui Wu</h3>
+          <p>Associate Professor, University of Florida</p>
+        </div>
+        <div class="member">
+          <img src="https://randomuser.me/api/portraits/men/45.jpg" alt="Dr. Hu">
+          <h3>Dr. Xia Hu</h3>
+          <p>Associate Professor, Rice University</p>
+        </div>
+        <div class="member">
+          <img src="https://randomuser.me/api/portraits/men/21.jpg" alt="Dr. Zong">
+          <h3>Dr. Nansu Zong</h3>
+          <p>AI Researcher, Mayo Clinic</p>
+        </div>
+        <div class="member">
+          <img src="https://randomuser.me/api/portraits/men/52.jpg" alt="Dr. Jiang">
+          <h3>Dr. Xiaoqian Jiang</h3>
+          <p>Professor, UT Health Houston</p>
+        </div>
+      </div>
+    </section>
   </main>
   <footer>
     &copy; 2025 One-Stop Drug Development Workshop. All rights reserved.
